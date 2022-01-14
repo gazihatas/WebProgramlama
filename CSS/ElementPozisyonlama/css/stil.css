@@ -1,0 +1,33 @@
+.box {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border: 5px solid grey;
+    margin: 30px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  
+  /*----- FIXED -----*/
+  .sabitlenmis-resim {
+    position: fixed;
+    top:10px;
+    left: 100px;
+  }
+  
+  /*----- RELATIVE--------*/
+  .goreceli-resim {
+    position: relative;
+    left: 100px;
+    top: 10px;
+  }
+  
+  /*------ ABSOLUTE -------*/
+  .mutlak-resim{
+    position: absolute;
+    left:100px;
+    top: 10px;
+  }
+  
+  

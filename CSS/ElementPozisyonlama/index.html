@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Pozisyonlama Modelleri</title>
+    <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+    <div class="box">
+        4 Farklı pozisyonlama özelliği vardır.
+        <ol>
+        <fieldset><legend>Static (Olduğu Gibi)</legend>
+          <p>Bu modelde element için herhangi bir pozisyon değeri verilmez. Elemente herhangi bir değer verilmediğinde de varsayılan olarak bu pozisyon modeli uygulanır. Yine de kendiniz stil vermek isterseniz aşağıdaki gibi verebilirsiniz.</p>
+          <p>
+            div {
+             position: static;
+            }
+          </p>
+          
+          </fieldset>
+          <fieldset><legend>Fixed (Sabitlemek)</legend>
+            Ekran boyutu değişse bile, kendisini olduğu yerde sabitler. Aynı monitörün üzerine bir  etiket yapıştırmışsınız gibi davranır. Genelde ekranın sağında solunda sabit kalan reklam uygulamalarında kullanılır. Veya sabit kalan arkaplan resimlerinde de kullanılır.
+            <br>
+            For examle:
+            <p>
+              <img src="https://media05.ligtv.com.tr/img/news/2011/1/2/rg_Ronaldinho002.jpg" alt="" width="300px;" class="sabitlenmis-resim">
+            </p>
+          </fieldset>
+          
+          <fieldset><legend>Relative (Göreceli)</legend>
+            <p>
+              Kendinden bir önceki elemente göre kendini yeniden konumlandırır. Relative olan bir element de otomatik olarak <b>z-index</b>(CSS'te katman sistemidir.) değeri otomatik olarak bir değer artar. Yani üst katmana çekilir.
+            </p>
+            
+              <img src="https://media05.ligtv.com.tr/img/news/2011/1/2/rg_Ronaldinho002.jpg" alt="" width="300px;" class="goreceli-resim">
+            
+            
+          </fieldset>
+          <fieldset><legend>Absolute (Mutlak)</legend>
+          <p>
+            Tarayıcının sol üst köşesine göre hize alır
+          </p>
+          
+           <img src="https://media05.ligtv.com.tr/img/news/2011/1/2/rg_Ronaldinho002.jpg" alt="" width="300px;" class="mutlak-resim">
+            
+          </fieldset>
+      </div>      
+</body>
+</html>
